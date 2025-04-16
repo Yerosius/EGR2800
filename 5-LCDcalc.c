@@ -2,7 +2,7 @@
  * @Author: Yerosius yerosius@163.com
  * @Date: 2025-04-16 15:12:48
  * @LastEditors: Yerosius yerosius@163.com
- * @LastEditTime: 2025-04-16 21:05:24
+ * @LastEditTime: 2025-04-16 21:13:35
  * @FilePath: /作业/5-LCDcalc.c
  */
 /*
@@ -17,8 +17,9 @@ int main(){
     long long a,b;
     char kbuf[12];
     char* ptr=kbuf;
-    char blanks[]="                ";
-    char invalid[]="Cannot divided 0";
+    char blanks[16];
+    for(int i=0;i<16;i++) blanks[i]=' ';
+    char invalid[16]="Cannot divided 0";
     char c,d;
     int i=0;
     PLL_init();
