@@ -2,7 +2,7 @@
  * @Author: Yerosius yerosius@163.com
  * @Date: 2025-04-16 15:12:48
  * @LastEditors: Yerosius yerosius@163.com
- * @LastEditTime: 2025-04-16 21:02:57
+ * @LastEditTime: 2025-04-16 21:05:24
  * @FilePath: /作业/5-LCDcalc.c
  */
 /*
@@ -19,7 +19,7 @@ int main(){
     char* ptr=kbuf;
     char blanks[]="                ";
     char invalid[]="Cannot divided 0";
-    char c,a;
+    char c,d;
     int i=0;
     PLL_init();
     lcd_init();
@@ -27,10 +27,10 @@ int main(){
     set_lcd_addr(0x00);
     while(1){
         c=getkey();
-        a=hex2asc(c);
-        kbuf[i]=a;
+        d=hex2asc(c);
+        kbuf[i]=d;
         if(c<10){
-            data8(a);
+            data8(d);
             wait_keyup();
             i++;
         }else{
