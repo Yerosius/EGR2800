@@ -2,7 +2,7 @@
  * @Author: Yerosius yerosius@163.com
  * @Date: 2025-04-16 15:12:48
  * @LastEditors: Yerosius yerosius@163.com
- * @LastEditTime: 2025-04-16 21:13:35
+ * @LastEditTime: 2025-04-16 21:16:44
  * @FilePath: /作业/5-LCDcalc.c
  */
 /*
@@ -68,7 +68,7 @@ int main(){
                     i=0;
                     set_lcd_addr(0x00);
                     break;
-                case 0xD://乘法
+                case 0xD://除法
                     b=number(ptr);
                     if(b){
                         a/=b;
