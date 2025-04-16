@@ -2,7 +2,7 @@
  * @Author: Yerosius yerosius@163.com
  * @Date: 2025-04-16 15:12:48
  * @LastEditors: Yerosius yerosius@163.com
- * @LastEditTime: 2025-04-16 20:18:52
+ * @LastEditTime: 2025-04-16 21:02:57
  * @FilePath: /作业/5-LCDcalc.c
  */
 /*
@@ -36,9 +36,9 @@ int main(){
         }else{
             switch(c){
                 case 0xE://输入完一个数
-                    op1=number(ptr);
+                    a=number(ptr);
                     set_lcd_addr(0x40);
-                    write_long_lcd(op1);
+                    write_long_lcd(a);
                     set_lcd_addr(0x00);
                     type_lcd(blanks);
                     wait_keyup();
@@ -46,10 +46,10 @@ int main(){
                     set_lcd_addr(0x00);
                     break;
                 case 0xB://减法
-                    op2=number(ptr);
-                    op1-=op2;
+                    b=number(ptr);
+                    a-=b;
                     set_lcd_addr(0x40);
-                    write_long_lcd(op1);
+                    write_long_lcd(a);
                     set_lcd_addr(0x00);
                     type_lcd(blanks);
                     wait_keyup();
@@ -57,10 +57,10 @@ int main(){
                     set_lcd_addr(0x00);
                     break;
                 case 0xC://乘法
-                    op2=number(ptr);
-                    op1*=op2;
+                    b=number(ptr);
+                    a*=b;
                     set_lcd_addr(0x40);
-                    write_long_lcd(op1);
+                    write_long_lcd(a);
                     set_lcd_addr(0x00);
                     type_lcd(blanks);
                     wait_keyup();
@@ -68,11 +68,11 @@ int main(){
                     set_lcd_addr(0x00);
                     break;
                 case 0xD://乘法
-                    op2=number(ptr);
-                    if(op2){
-                        op1/=op2;
+                    b=number(ptr);
+                    if(b){
+                        a/=b;
                         set_lcd_addr(0x40);
-                        write_long_lcd(op1);
+                        write_long_lcd(a);
                     }else{
                         set_lcd_addr(0x40);
                         type_lcd(invalid);
