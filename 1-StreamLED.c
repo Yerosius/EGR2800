@@ -2,10 +2,9 @@
  * @Author: Yerosius yerosius@163.com
  * @Date: 2025-04-02 20:38:53
  * @LastEditors: Yerosius yerosius@163.com
- * @LastEditTime: 2025-04-02 20:48:54
- * @FilePath: /作业/流水灯.c
+ * @LastEditTime: 2025-04-02 23:51:05
+ * @FilePath: /作业/1-StreamLED.c
  */
-
 /*
 作业1 流水灯
 内容：设给定PORTB的初值为0xfe。在LED使能情况下,采用每次左移1次或者右移1次的方式实现LED流水灯。
