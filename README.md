@@ -1,6 +1,6 @@
 # 说明
 
-此仓库为[Yerosius](https://github.com/Yerosius)的EGR2800(机电系统设计与分析)的单片机编程部分的作业。
+此仓库为[Yerosius](https://github.com/Yerosius)的EGR2800(机电系统设计与分析)的单片机编程部分的作业，以及部分电子版笔记。
 
 您可以自由浏览、下载并分发此仓库中的任何内容，但您不能将其用于商业用途以获利。
 
