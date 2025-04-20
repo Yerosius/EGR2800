@@ -1,11 +1,7 @@
-<!--
- * @Author: Yerosius yerosius@163.com
- * @Date: 2025-04-18 17:42:23
- * @LastEditors: Yerosius yerosius@163.com
- * @LastEditTime: 2025-04-18 17:47:16
- * @FilePath: /作业/README.md
--->
 # 说明
+> [!IMPORTANT]
+>
+> 注：此仓库只是用于管理与维护作业之用，并不代表作者将在本仓库和单片机领域内投入时间。任何对此仓库的issue和PR均不会处理。
 
 此仓库为[Yerosius](https://github.com/Yerosius)的EGR2800(机电系统设计与分析)的单片机编程部分的作业，以及部分电子版笔记。
 
