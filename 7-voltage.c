@@ -2,8 +2,8 @@
  * @Author: Yerosius yerosius@163.com
  * @Date: 2025-04-25 20:55:47
  * @LastEditors: Yerosius yerosius@163.com
- * @LastEditTime: 2025-04-25 22:33:18
- * @FilePath: /作业/7-voltage.c
+ * @LastEditTime: 2025-04-25 22:44:55
+ * @FilePath: /undefined/mnt/Data/单片机课/作业/7-voltage.c
  */
 /*
 作业6：电压采集
@@ -32,16 +32,15 @@ int main(){
     while(1){
         int t=ad0conv(7);
         t>>=1;
-        double v=t/1023.0*5.0;
+        t=(t/1023.0*5.0)*1000;
         seg7_on(0x80,0);//显示小数点
-        v*=1000;
         for(int i=0;i<4;i++){
-            int x=v%10;
+            int x=t%10;
             seg7dec(x,3-i);
             if(i!=3) set_lcd_addr(0x06-i);
             else set_lcd_addr(0x02);
             data8(x+'0');
-            v/=10;
+            t/=10;
         }
         ms_delay(100);
     }
