@@ -2,8 +2,8 @@
  * @Author: Yerosius yerosius@163.com
  * @Date: 2025-04-25 20:55:47
  * @LastEditors: Yerosius yerosius@163.com
- * @LastEditTime: 2025-04-25 22:44:55
- * @FilePath: /undefined/mnt/Data/单片机课/作业/7-voltage.c
+ * @LastEditTime: 2025-04-25 23:01:56
+ * @FilePath: /作业/7-voltage.c
  */
 /*
 作业6：电压采集
